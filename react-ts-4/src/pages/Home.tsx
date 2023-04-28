@@ -13,13 +13,13 @@ const Home = () => {
     dispatch(getMenu());
   }, []);
   return (
-    <section className=" py-20">
-      <div className=" relative flex justify-center mb-14">
-        <h1 className=" text-4xl font-medium tracking-wide">Our Menu</h1>
+    <section className="py-20 ">
+      <div className="relative flex justify-center mb-14">
+        <h1 className="text-4xl font-medium tracking-wide ">Our Menu</h1>
         <div className=" h-1 bg-amber-400 absolute bottom-[-20px] w-[100px]"></div>
       </div>
       <Tabs />
-      <div className=" grid grid-cols-3 gap-y-20 px-20 justify-items-center mt-20">
+      <div className="grid grid-cols-1 mt-20 lg:px-20 md:px-10 md:grid-cols-2 lg:grid-cols-3 gap-y-20 justify-items-center">
         {showMenu.map((item) => (
           <MenuCard {...item} key={item.id} />
         ))}
